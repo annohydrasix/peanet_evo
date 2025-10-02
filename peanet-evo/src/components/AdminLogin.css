@@ -1,0 +1,75 @@
+/* ===================== */
+/* Admin Login CSS       */
+/* ===================== */
+
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e2f; /* sama dengan dashboard */
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-login-box {
+  background: #2a2a3d;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.admin-login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00ffc8;
+  letter-spacing: 1px;
+}
+
+.admin-login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-box input {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.admin-login-box input:focus {
+  background: #252539;
+  box-shadow: 0 0 8px #00ffc8;
+}
+
+.admin-login-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: #00ffc8;
+  color: #1e1e2f;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-login-btn:hover {
+  background: #00d6a8;
+}
+
+/* Optional: pesan error */
+.admin-login-error {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: 8px;
+}

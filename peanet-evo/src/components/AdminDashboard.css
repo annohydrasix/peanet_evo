@@ -1,0 +1,79 @@
+/* ===================== */
+/* Admin Dashboard CSS   */
+/* ===================== */
+
+.admin-dashboard {
+  min-height: 100vh;
+  background: #1e1e2f; /* dark background */
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  padding: 30px;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #00ffc8;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.admin-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #2a2a3d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0, 255, 200, 0.2);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.admin-table th {
+  background: #00ffc8;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+  background: #33334d;
+}
+
+.admin-table tr:nth-child(odd) {
+  background: #2a2a3d;
+}
+
+.admin-table td {
+  color: #e6e6e6;
+}
+
+/* ✅ / ❌ styling */
+.admin-table td:last-child {
+  font-size: 18px;
+}
+
+/* Logout Button */
+.admin-logout-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 28px;
+  background: #00ffc8;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-logout-btn:hover {
+  background: #00d6a8;
+}

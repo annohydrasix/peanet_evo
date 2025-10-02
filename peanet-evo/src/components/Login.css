@@ -1,0 +1,101 @@
+/* Container utama */
+.login-container {
+  position: relative; /* supaya pseudo element bisa diposisikan */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Animated background gradient */
+  background: linear-gradient(-45deg, #000000, #0c2a61, #50063a, #330558);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* biar bintang tidak keluar */
+}
+
+/* Tambahan bintang */
+.login-container::before,
+.login-container::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%;
+  height: 200%;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  opacity: 0.6;
+  animation: moveStars 100s linear infinite;
+}
+
+/* layer kedua bintang biar lebih hidup */
+.login-container::after {
+  opacity: 0.3;
+  animation-duration: 200s;
+}
+
+/* Animasi bintang */
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* Judul */
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #008844;
+  z-index: 1;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  z-index: 1;
+}
+
+/* Input */
+.login-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  background: #333;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* Tombol login */
+.login-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ff88, #00cc66);
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: linear-gradient(90deg, #00cc66, #009944);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff88;
+}

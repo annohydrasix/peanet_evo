@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #002b1e, #004d33);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #eaeaea;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.homepage-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ff9d;
+  text-shadow: 0 0 15px #00ff9d;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #00c8ff;
+  text-shadow: 0 0 10px #00c8ff;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 12px;
+  border: 2px solid #00ff9d;
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.rules {
+  margin-top: 30px;
+  text-align: left;
+  background: rgba(15, 15, 15, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #00c8ff;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.4);
+}
+
+.rules ol {
+  margin-left: 20px;
+}
+
+.rules li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
